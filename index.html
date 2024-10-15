@@ -1,66 +1,109 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhiloThéo : sagesse et fraternité</title>
+    <meta name="description" content="Réflexion philosophique et théologique des SDB MDG étudiants">
+    <meta name="keywords" content="philosophie, théologie, SDB, étudiants, spiritualité, sagesse">
+    <meta name="author" content="Ton Nom">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
+            line-height: 1.6;
         }
         header {
-            background-color: #004d40;
+            background-color: #4CAF50;
             color: white;
-            padding: 20px;
+            padding: 15px 0;
             text-align: center;
-        }
-        header h1 {
-            margin: 0;
         }
         nav {
-            display: flex;
-            justify-content: center;
-            background-color: #00695c;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-        .content {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .content h2 {
-            color: #004d40;
-        }
-        .post {
-            margin-bottom: 20px;
-        }
-        footer {
-            background-color: #004d40;
-            color: white;
             text-align: center;
             padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            background-color: #333;
         }
-        .social-icons a {
-            color: white;
-            margin: 0 10px;
+        nav a {
+            margin: 0 15px;
             text-decoration: none;
-            font-size: 1.5em;
+            color: white;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        #accueil {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        #accueil h2 {
+            font-size: 2.2em;
+        }
+        .quote {
+            font-style: italic;
+            color: #666;
+            margin: 20px 0;
+        }
+        .values {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .values div {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+        .article {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+        .article img {
+            width: 150px;
+            height: 100px;
+            margin-right: 20px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .article-summary {
+            max-width: 800px;
+        }
+        #apropos img {
+            border-radius: 50%;
+            width: 150px;
+            display: block;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: none;
         }
     </style>
 </head>
@@ -72,39 +115,79 @@
 </header>
 
 <nav>
-    <a href="#">Accueil</a>
-    <a href="#">À propos</a>
-    <a href="#">Contact</a>
+    <a href="#accueil">Accueil</a>
+    <a href="#articles">Articles</a>
+    <a href="#apropos">À propos</a>
+    <a href="#contact">Contact</a>
 </nav>
 
-<div class="content">
-    <h2>Articles récents</h2>
-    
-    <!-- Article 1 -->
-    <div class="post">
-        <h3>Le sens de la vie selon Aristote</h3>
-        <p>Date : 12 octobre 2024</p>
-        <p>Un aperçu de la vision aristotélicienne du sens de la vie, et comment elle continue à influencer la théologie moderne...</p>
-        <a href="#">Lire plus</a>
+<section id="accueil">
+    <h2>Bienvenue sur PhiloThéo</h2>
+    <p>Nous explorons la sagesse et la fraternité à travers la philosophie et la théologie, en nous appuyant sur les valeurs de la spiritualité salésienne.</p>
+    <p class="quote">"La philosophie est la quête de la vérité ; la théologie, l'accueil de la lumière divine." - Anonyme</p>
+    <div class="values">
+        <div>
+            <h3>Sagesse</h3>
+            <p>Réfléchir profondément sur les questions de l'existence, de l'humanité et de la transcendance.</p>
+        </div>
+        <div>
+            <h3>Fraternité</h3>
+            <p>Promouvoir l'unité et l'amour entre les personnes à travers la foi et la raison.</p>
+        </div>
+        <div>
+            <h3>Spiritualité Salésienne</h3>
+            <p>Suivre les enseignements de Don Bosco pour guider notre réflexion et notre action.</p>
+        </div>
+    </div>
+</section>
+
+<section id="articles">
+    <h2>Articles de Blog</h2>
+    <div class="article">
+        <img src="https://via.placeholder.com/150" alt="Image de sagesse">
+        <div class="article-summary">
+            <h3>La quête de la sagesse dans le monde moderne</h3>
+            <p>Dans un monde où tout va très vite, comment trouver la paix et la sagesse intérieure ? Cet article explore les enseignements philosophiques classiques et modernes sur la sagesse.</p>
+            <a href="#">Lire la suite</a>
+        </div>
     </div>
 
-    <!-- Article 2 -->
-    <div class="post">
-        <h3>La foi dans la philosophie contemporaine</h3>
-        <p>Date : 5 octobre 2024</p>
-        <p>Exploration des intersections entre la foi religieuse et les courants philosophiques contemporains...</p>
-        <a href="#">Lire plus</a>
+    <div class="article">
+        <img src="https://via.placeholder.com/150" alt="Image de fraternité">
+        <div class="article-summary">
+            <h3>Théologie et fraternité dans le contexte actuel</h3>
+            <p>Nous explorons ici comment la théologie peut offrir des solutions aux défis sociaux et spirituels contemporains.</p>
+            <a href="#">Lire la suite</a>
+        </div>
     </div>
-</div>
+</section>
+
+<section id="apropos">
+    <h2>À propos de PhiloThéo</h2>
+    <img src="https://via.placeholder.com/150" alt="Photo de l'auteur">
+    <p>Je suis un éducateur salésien passionné par la philosophie et la théologie. Ce blog est un espace de partage, où nous explorons ensemble les questions qui touchent à la sagesse, la foi, et la fraternité.</p>
+    <p>Ayant travaillé de nombreuses années dans l'éducation, j'ai à cœur de transmettre les valeurs humanistes et spirituelles pour contribuer à la formation de personnes intégrales.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <form action="https://example.com/form-handler" method="POST">
+        <input type="text" name="name" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre e-mail" required>
+        <textarea name="message" rows="5" placeholder="Votre message"></textarea>
+        <input type="submit" value="Envoyer">
+    </form>
+    <p>Ou contactez-moi sur les réseaux sociaux :</p>
+    <ul>
+        <li><a href="https://facebook.com/tonpseudo" target="_blank">Facebook</a></li>
+        <li><a href="https://twitter.com/tonpseudo" target="_blank">Twitter</a></li>
+        <li><a href="https://linkedin.com/in/tonpseudo" target="_blank">LinkedIn</a></li>
+    </ul>
+</section>
 
 <footer>
-    <p>Suivez-moi sur les réseaux sociaux :</p>
-    <div class="social-icons">
-        <a href="https://facebook.com" target="_blank">Facebook</a>
-        <a href="https://twitter.com" target="_blank">Twitter</a>
-        <a href="https://instagram.com" target="_blank">Instagram</a>
-    </div>
-    <p>&copy; 2024 PhiloThéo : sagesse et fraternité</p>
+    <p>"La sagesse commence dans l'émerveillement." - Socrate</p>
+    <p>&copy; 2024 PhiloThéo - Tous droits réservés</p>
 </footer>
 
 </body>
