@@ -3,107 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhiloThéo : sagesse et fraternité</title>
-    <meta name="description" content="Réflexion philosophique et théologique des SDB MDG étudiants">
-    <meta name="keywords" content="philosophie, théologie, SDB, étudiants, spiritualité, sagesse">
+    <meta name="description" content="PhiloThéo : Réflexions philosophiques et théologiques pour les jeunes salésiens. Explorez la sagesse et la fraternité à travers des articles de blog.">
+    <meta name="keywords" content="philosophie, théologie, SDB, jeunes, salésiens, sagesse, fraternité, spiritualité">
     <meta name="author" content="Ton Nom">
+    <meta property="og:title" content="PhiloThéo : sagesse et fraternité">
+    <meta property="og:description" content="Réflexions philosophiques et théologiques par des jeunes étudiants SDB de Madagascar.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.philotheo.com/">
+    <meta property="og:image" content="https://www.philotheo.com/images/og-image.jpg">
+    <title>PhiloThéo : sagesse et fraternité</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Assume we have an external stylesheet -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXXXXX-X'); // Replace with your Analytics ID
+    </script>
     <style>
+        /* Styles for navbar, header, footer, and responsiveness */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Open Sans', sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
         }
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 15px 0;
+            padding: 20px;
             text-align: center;
         }
         nav {
-            text-align: center;
-            padding: 10px;
             background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
         }
         nav a {
+            color: white;
             margin: 0 15px;
             text-decoration: none;
-            color: white;
-            font-weight: bold;
         }
-        section {
+        .container {
             padding: 20px;
-        }
-        #accueil {
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        #accueil h2 {
-            font-size: 2.2em;
-        }
-        .quote {
-            font-style: italic;
-            color: #666;
-            margin: 20px 0;
-        }
-        .values {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-        .values div {
-            background-color: #fff;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            width: 30%;
-        }
-        .article {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            display: flex;
-        }
-        .article img {
-            width: 150px;
-            height: 100px;
-            margin-right: 20px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-        .article-summary {
-            max-width: 800px;
-        }
-        #apropos img {
-            border-radius: 50%;
-            width: 150px;
-            display: block;
-            margin: 0 auto;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-        footer p {
-            margin: 0;
-        }
-        form input, form textarea {
-            width: 100%;
             padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        form input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            cursor: pointer;
-            border: none;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -121,84 +73,17 @@
     <a href="#contact">Contact</a>
 </nav>
 
-<section id="accueil">
-    <h2>Bienvenue sur PhiloThéo</h2>
-    <p>PhiloThéo est un espace où nous engageons des discussions profondes autour des grandes questions de la vie, de la sagesse humaine et de la théologie. Inspirés par la philosophie, nous cherchons à promouvoir une réflexion critique sur la condition humaine, tout en accueillant la lumière divine à travers les enseignements théologiques.</p>
-    <p class="quote">"La philosophie est l'amour de la sagesse ; la théologie, la quête de la vérité divine." - Anonyme</p>
-    <div class="values">
-        <div>
-            <h3>Sagesse</h3>
-            <p>La sagesse est au cœur de notre démarche. Elle nous permet de poser un regard profond et critique sur le monde. Chaque jour, nous tentons de mieux comprendre les mystères de la vie à travers la réflexion et l'échange.</p>
-        </div>
-        <div>
-            <h3>Fraternité</h3>
-            <p>La fraternité est essentielle à toute véritable réflexion philosophique et théologique. Nous croyons que la recherche de vérité ne peut être séparée du respect et de l'amour de l'autre.</p>
-        </div>
-        <div>
-            <h3>Spiritualité Salésienne</h3>
-            <p>Inspirés par l'esprit de Don Bosco, nous allions l'engagement intellectuel à la bienveillance et à l'action concrète au service des jeunes et des moins fortunés.</p>
-        </div>
-    </div>
-</section>
-
-<section id="articles">
-    <h2>Articles de Blog</h2>
-
-    <div class="article">
-        <img src="https://via.placeholder.com/150" alt="Sagesse dans le monde moderne">
-        <div class="article-summary">
-            <h3>La quête de la sagesse dans le monde moderne</h3>
-            <p>Dans un monde en perpétuelle accélération, comment pouvons-nous trouver des réponses aux questions profondes de l'existence ? Cet article plonge dans la philosophie antique et moderne pour explorer les chemins de la sagesse. En partant de Platon jusqu'à Nietzsche, nous analysons comment la sagesse a évolué et son impact aujourd'hui.</p>
-            <p>Les philosophes grecs comme Platon et Aristote considéraient la sagesse comme un mode de vie orienté vers la recherche de la vérité et du bien. Platon, avec sa notion du monde des Idées, voyait la sagesse comme une élévation de l'esprit vers la compréhension des vérités éternelles. Aristote, quant à lui, mettait en avant la sagesse pratique (phronesis) comme étant le guide pour une vie vertueuse.</p>
-            <p>À travers l'Histoire, la sagesse a pris de multiples formes. Nietzsche, par exemple, a remis en question les fondements moraux de la sagesse traditionnelle en proposant un dépassement des valeurs morales communes pour affirmer une sagesse nouvelle, basée sur la puissance de l'individu à créer ses propres valeurs.</p>
-            <p>Dans le monde contemporain, marqué par le scepticisme, l'individualisme et l'accélération technologique, la question de la sagesse se pose de manière cruciale. Sommes-nous encore capables de vivre selon des principes de sagesse hérités des grands philosophes ?</p>
-        </div>
-    </div>
-
-    <div class="article">
-        <img src="https://via.placeholder.com/150" alt="Théologie et fraternité">
-        <div class="article-summary">
-            <h3>Théologie et fraternité dans un monde divisé</h3>
-            <p>La théologie offre des réponses uniques aux défis contemporains. Dans un monde souvent divisé par la religion, cet article explore comment la théologie peut être une force d'unité et de fraternité. Nous abordons les enseignements de grands théologiens comme Thomas d'Aquin et Karl Rahner pour comprendre comment la foi peut transformer la société.</p>
-            <p>Thomas d'Aquin, dans sa Somme Théologique, expliquait que la fraternité humaine est un reflet de la fraternité divine. Chaque être humain, créé à l'image de Dieu, est appelé à vivre en communion avec les autres. Cette vision de la fraternité trouve son fondement dans l'amour de Dieu, qui dépasse toutes les divisions.</p>
-            <p>Karl Rahner, théologien du 20e siècle, a développé une théologie où la fraternité humaine est vue comme une dimension essentielle de l'expérience religieuse. Il insistait sur l'idée que Dieu se révèle dans la vie quotidienne et dans nos relations avec les autres. En étant attentifs à la souffrance et aux besoins de nos frères et sœurs, nous participons à l'œuvre divine.</p>
-            <p>Dans un monde où les tensions religieuses et les divisions idéologiques sont fréquentes, la théologie rappelle que la foi, bien comprise, peut être un levier puissant pour promouvoir la paix et l'unité.</p>
-        </div>
-    </div>
-
-    <div class="article">
-        <img src="https://via.placeholder.com/150" alt="Philosophie de l'éthique">
-        <div class="article-summary">
-            <h3>L'éthique en philosophie et en théologie</h3>
-            <p>La réflexion sur l'éthique est centrale dans les deux domaines de la philosophie et de la théologie. Cet article propose une discussion sur les principes éthiques, du point de vue d'Aristote, Kant, et des enseignements bibliques, pour tracer des parallèles entre l'éthique humaine et divine.</p>
-            <p>Aristote, avec sa notion de "vertu", a établi les bases de l'éthique téléologique. Il croyait que chaque action humaine vise un "bien", et que la vertu est une disposition à agir de manière juste. Pour Kant, l'éthique est fondée sur la raison pure. Son impératif catégorique demande à l'homme d'agir selon des maximes universelles.</p>
-            <p>Dans le cadre théologique, l'éthique est indissociable de la volonté divine. Les enseignements bibliques, particulièrement dans le Sermon sur la Montagne, insistent sur l'amour du prochain et le respect des commandements de Dieu. L'éthique théologique dépasse l'éthique humaine en invitant à une communion avec le divin dans nos choix moraux.</p>
-            <p>Les dilemmes éthiques actuels, tels que ceux liés à la bioéthique, à l'écologie ou à la justice sociale, appellent à un dialogue entre la philosophie et la théologie pour offrir des réponses justes et éclairées.</p>
-        </div>
-    </div>
-</section>
-
-<section id="apropos">
-    <h2>À propos de PhiloThéo</h2>
-    <img src="https://via.placeholder.com/150" alt="Auteur du blog">
-    <p>Je suis un éducateur salésien, passionné de philosophie et de théologie. Depuis plusieurs années, je m'efforce d'unir ces deux disciplines pour offrir une réflexion critique et spirituelle aux jeunes étudiants et à la communauté. À travers PhiloThéo, je souhaite créer un espace d'échange et de dialogue pour ceux qui cherchent à approfondir leur compréhension de la sagesse et de la foi.</p>
-    <p>Formé à la fois en philosophie classique et en théologie chrétienne, je puise mon inspiration dans les grands penseurs et mystiques de notre histoire, tels que saint Augustin, Thomas d'Aquin, mais aussi dans la tradition salésienne de Don Bosco, qui met l'accent sur l'éducation des jeunes par la bienveillance et l'amour.</p>
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Si vous avez des questions, des réflexions à partager ou si vous souhaitez simplement discuter, n'hésitez pas à me contacter via le formulaire ci-dessous ou à me retrouver sur les réseaux sociaux.</p>
-    <form action="https://example.com/form-handler" method="POST">
-        <input type="text" name="name" placeholder="Votre nom" required>
-        <input type="email" name="email" placeholder="Votre e-mail" required>
-        <textarea name="message" rows="5" placeholder="Votre message"></textarea>
-        <input type="submit" value="Envoyer">
-    </form>
-</section>
+<div class="container">
+    <!-- Section articles, about, contact will be included here -->
+</div>
 
 <footer>
     <p>PhiloThéo &copy; 2024 | Tous droits réservés</p>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
